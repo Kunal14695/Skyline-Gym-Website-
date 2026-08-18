@@ -10,9 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
             navMenu.classList.toggle('active');
         });
 
-        // Close menu when clicking nav links
-        const navLinks = navMenu.querySelectorAll('.nav-link');
-        navLinks.forEach(link => {
+        // Close menu when clicking nav links or CTA button
+        const menuItems = navMenu.querySelectorAll('.nav-link, .nav-cta');
+        menuItems.forEach(link => {
             link.addEventListener('click', () => {
                 hamburger.classList.remove('active');
                 navMenu.classList.remove('active');
